@@ -1,0 +1,13 @@
+/*#region General */
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+html:root {
+    --primary: #b5ddff;
+    --secondary: #0084fd;
+    --tertiary: #9792e4;
+    --light: #ffffff;
+    --dark:#333333;
+}
