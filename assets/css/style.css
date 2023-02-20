@@ -27,23 +27,28 @@ li {
 
 /* region utilities */
 
-.debug .container {
+/* .debug .container {
     background-color: rgba(255, 192, 203, 0.547);
-}
+} */
 
 /* .debug [class^="col_"]:not(#app_header [class^="col_"]) {
     border: 1px dashed black;
     height: 100px;
-    margin: 0.5rem -0.5rem ;
+   
 } */
 
 .d-flex{
     display: flex;
 } 
+
+.align_self_center {
+    align-self: center;
+}
 .container {
     width: 90%;
     margin: auto;
 }
+
 
 .row {
     flex-wrap: wrap;
@@ -54,6 +59,14 @@ li {
 .my_2 {
     margin-top: 2rem;
     margin-bottom: 2rem
+}
+
+.pb_2 {
+    padding-bottom: 2rem;
+}
+
+.pt_2 {
+    padding-top: 2rem;
 }
 .col_3 {
     width: calc(100% / 12 *3);
@@ -101,6 +114,39 @@ li {
         height: 1000px;
     }
 
+    #demo [class^="col_"] {
+        background-color: var(--primary);
+        border-radius: 20px;
+        margin: 0.5rem -0.5rem ;
+    }
+
+    #demo .row .d-flex {
+        flex-direction: column;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    #demo .row .col_md_8 h2 {
+        color: var(--secondary);
+    }
+
+    #demo .row .col_md_8 p{
+       line-height: 1.5;
+       font-size: 16px;
+       color: var(--dark);
+    }
+
+    #demo .row .col_md_8 span {
+        align-self: center;
+        color: var(--light);
+        background-color: var(--secondary);
+        padding: 0.5rem 2.5rem;
+        border-radius: 20px;
+    }
+
+    #demo .row .col_md_8 .col_image{
+       width: 70%;
+       margin: auto;
+    }
 /* #endregion demo */
 
 /* #region planning  */
