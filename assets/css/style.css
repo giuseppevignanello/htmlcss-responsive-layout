@@ -99,6 +99,34 @@ html:root {
 /* #region about */
 /* #endregion about */
 
+/* #region call_to_action */
+.debug #call_to_action {
+    height: 300px;
+}
+
+.debug #call_to_action .container {
+    height: 80%;
+    background-color: #b5ddff;
+}
+#call_to_action {
+    background-color: var(--tertiary);
+}
+
+/* #endregion call_to_action */
+
+/* #region footer */
+.debug #app_footer {
+    height: 300px;
+}
+
+.debug #app_footer .container {
+    height: 80%;
+    background-color: #b5ddff;
+}    
+
+#app_footer {
+    background-color: var(--dark);
+}
 
 /* #region media */
 
