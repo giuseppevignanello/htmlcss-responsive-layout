@@ -11,6 +11,18 @@ html:root {
     --light: #ffffff;
     --dark:#333333;
 }
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
 /* #endregion general */
 
 /* region utilities */
@@ -53,18 +65,35 @@ html:root {
 
  /* #region header */
 
- .debug #logo, .debug #header_menu {
-    background-color: red;
- }
 
  #app_header {
     background-color: var(--secondary);
-    height: 50px;
+    height: 8rem;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
  } 
 
+ #header_menu {
+  justify-content: end; 
+ }
 
+ #header_menu ul {
+    display: none;
+ }
+
+ #app_header a {
+    color: var(--light);
+    text-decoration: none;
+ }
+
+ #header_menu .fa-bars {
+    color: var(--light);
+ }
+
+
+
+ 
 /* #endregion header */
 
 /* #region demo */
@@ -82,19 +111,19 @@ html:root {
 
 /* #endregion planning */
 
-/* #region partners */
+/* #region testimonial */
 
 
-.debug #partners .image, .debug #partners .quote {
+.debug #testiomonial .image, .debug #testiomonial .quote {
     height: 50px;
     border: 1px dashed black;
 }
 
-/*/#endregion partners */
+/*/#endregion testimonial */
 
-/* #region benefits */
+/* #region features */
 
-/* #endregion beneftis */
+/* #endregion features */
 
 /* #region about */
 /* #endregion about */
@@ -164,6 +193,9 @@ html:root {
         height: 250px;
     }
     
+    #app_header {
+        height: 4rem;
+    }
  }
  
 
@@ -189,4 +221,22 @@ html:root {
     .col_lg_10 {
         width: calc(100% /12 * 10)
     }
+
+    #header_menu div {
+        display: none;
+    }
+
+    #header_menu ul {
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header_menu #start_button {
+        background-color: var(--light);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+     }
+
 }

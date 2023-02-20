@@ -5,14 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body class="debug">
     <header id="app_header" class="d-flex">
-        <div id="logo" class="col_3">logo</div>
-        <div id="header_menu" class="col_3 col_lg_6">menu</div>
+        <div id="logo" class="col_3">
+            <img src="./assets/img/logo.png" alt="">
+        </div>
+        <menu id="header_menu" class="col_3 col_lg_6 d-flex">
+            <div>
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+            <ul>
+                <li><a href="#planning">Planning</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li id="start_button">Get Started</li>
+            </ul>
+        </menu>
     </header>
     <!-- /#app_header -->
     <main id="app_main">
@@ -38,7 +52,7 @@
             </div>
         </div>
         <!-- /planning -->
-        <section id="partners">
+        <section id="testimonial">
             <div class="container">
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio, odit hic ab deserunt dolorem.</div>
                 <div class="row">
@@ -61,9 +75,9 @@
                 </div>
             </div>
         </section>
-        <!-- /partners -->
+        <!-- /testimonial -->
 
-        <section id="benefits">
+        <section id="features">
             <div class="container">
                 <div>Lorem ipsum dolor sit amet.</div>
                 <div class="row d-flex">
@@ -77,7 +91,7 @@
             </div>
         
         </section>
-        <!-- /benefits -->
+        <!-- /features -->
 
         <section id="about">
             <div class="container">
