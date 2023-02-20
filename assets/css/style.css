@@ -11,3 +11,33 @@ html:root {
     --light: #ffffff;
     --dark:#333333;
 }
+/* #endregion general */
+
+/* region utilities */
+
+.d-flex{
+    display: flex;
+} 
+
+.col_3 {
+    width: calc(100% / 12 *3);
+}
+
+ /* #region header */
+
+ .debug #logo, .debug #header_menu {
+    background-color: red;
+ }
+
+ #app_header {
+    background-color: var(--secondary);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+ } 
+
+@media screen and (min-width:1200px) {
+   .col_lg_6 {
+    width: calc(100% / 12 * 6);
+   }
+}
