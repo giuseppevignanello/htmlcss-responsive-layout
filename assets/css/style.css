@@ -31,11 +31,11 @@ li {
     background-color: rgba(255, 192, 203, 0.547);
 }
 
-.debug [class^="col_"]:not(#app_header [class^="col_"]) {
+/* .debug [class^="col_"]:not(#app_header [class^="col_"]) {
     border: 1px dashed black;
     height: 100px;
     margin: 0.5rem -0.5rem ;
-}
+} */
 
 .d-flex{
     display: flex;
@@ -98,7 +98,7 @@ li {
 
 /* #region demo */
     .debug #demo .container {
-        height: 600px;
+        height: 1000px;
     }
 
 /* #endregion demo */
