@@ -41,14 +41,10 @@ li {
     display: flex;
 } 
 
-.align_self_center {
-    align-self: center;
-}
 .container {
     width: 90%;
     margin: auto;
 }
-
 
 .row {
     flex-wrap: wrap;
@@ -120,31 +116,34 @@ li {
         margin: 0.5rem -0.5rem ;
     }
 
-    #demo .row .d-flex {
-        flex-direction: column;
+    #demo .row .col_md_8 {
+        align-items: center;
         padding: 2rem 2rem 0 2rem;
+        flex-direction: column;
     }
 
-    #demo .row .col_md_8 h2 {
+    #demo .row .col_md_8 .col_content {
+        flex-direction: column;
+    }
+    #demo .row .col_md_8 .col_content h2 {
         color: var(--secondary);
     }
 
-    #demo .row .col_md_8 p{
+    #demo .row .col_md_8 .col_content p{
        line-height: 1.5;
-       font-size: 16px;
        color: var(--dark);
     }
 
-    #demo .row .col_md_8 span {
-        align-self: center;
+    #demo .row .col_md_8 .col_content span {
         color: var(--light);
         background-color: var(--secondary);
         padding: 0.5rem 2.5rem;
         border-radius: 20px;
+        margin: 0 auto;
     }
 
-    #demo .row .col_md_8 .col_image{
-       width: 70%;
+    #demo .row .col_md_8 .col_content .col_image{
+       width: 50%;
        margin: auto;
     }
 /* #endregion demo */
@@ -206,6 +205,8 @@ li {
 /* #region media */
 
 @media screen and (min-width:768px) {
+
+/* #region 768px Utilities */
     .row {
         display: flex;
         justify-content: space-between;
@@ -234,18 +235,32 @@ li {
     .col_md_9 {
         width: calc(100% /12 *9);
     }
+/* #endregion 768px Utilities */
 
-    .debug #demo .container {
-        height: 250px;
-    }
-    
+/* #region 768px header  */
     #app_header {
         height: 4rem;
     }
+/* #endregion 768px header  */
+
+/* #region 768px demo */
+#demo .row .col_md_8 {
+    align-items: flex-start;
+}
+#demo .row .col_md_8 .col_content p{
+    font-size: 14px;
+ }
+
+ #demo .row .col_md_8 .col_content span {
+    margin: 0 50% 0 0 ;
+    text-align: center;
+}
+
+
  }
  
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1152px) {
     .container {
         width: 70%;
     }
@@ -268,6 +283,10 @@ li {
         width: calc(100% /12 * 10)
     }
 
+    .col_lg_12 {
+        width: calc(100% /12 * 12)
+    }
+
     #header_menu div {
         display: none;
     }
@@ -284,5 +303,19 @@ li {
         padding: 0.5rem 1rem;
         border-radius: 20px;
      }
+
+     #demo .row .col_md_8{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    #demo .row .col_md_8 .col_content {
+        padding-bottom: 1rem;
+    }
+
+
+     #demo .row .col_md_8 .col_content span {
+        margin: 0 30% 0 0;
+        text-align: center;
+    }
 
 }
