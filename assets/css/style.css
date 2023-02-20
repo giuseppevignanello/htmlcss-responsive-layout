@@ -73,7 +73,7 @@ html:root {
 
 /* #endregion demo */
 
-/* #regio planning  */
+/* #region planning  */
 
 .debug #planning [class^="col_"] {
     border: 1px dashed black;
@@ -85,26 +85,48 @@ html:root {
     padding: 1rem 0;
 }
 
+/* #endregion planning */
+
+/* #region partners */
+
+
+.debug #partners .image, .debug #partners .quote {
+    height: 50px;
+    border: 1px dashed black;
+}
+
+
 /* #region media */
 
 @media screen and (min-width:420px) {
     .row {
         justify-content: space-between;
     }
-    .col_md_6 {
-     width: calc(100% / 12 * 6);
+    .col_md_3 {
+        width: calc(100% / 12 * 3);
     }
 
     .col_md_4 {
-    width: calc(100% /12 * 4);
+        width: calc(100% /12 * 4);
+        }
+
+    .col_md_6 {
+         width: calc(100% / 12 * 6);
+    }
+    .col_md_8 {
+        width: calc(100%/ 12 * 8)
     }
 
-    .col_md_8 {
-    width: calc(100%/ 12 * 8)
+    .col_md_9 {
+        width: calc(100% /12 *9);
     }
 
     .debug #demo .container {
         height: 250px;
+    }
+    
+    #partners .row {
+        display: flex;
     }
  }
  
@@ -113,7 +135,14 @@ html:root {
     .container {
         width: 70%;
     }
+    .col_lg_2 {
+        width: calc(100% /12 * 2)
+    }
     .col_lg_6 {
         width: 50%;
+    }
+    
+    .col_lg_10 {
+        width: calc(100% /12 * 10)
     }
 }
