@@ -73,6 +73,18 @@ html:root {
 
 /* #endregion demo */
 
+/* #regio planning  */
+
+.debug #planning [class^="col_"] {
+    border: 1px dashed black;
+    height: 100px;
+    margin: 0.5rem -0.5rem ;
+}
+
+#planning {
+    padding: 1rem 0;
+}
+
 /* #region media */
 
 @media screen and (min-width:420px) {
@@ -101,5 +113,7 @@ html:root {
     .container {
         width: 70%;
     }
+    .col_lg_6 {
+        width: 50%;
+    }
 }
- 
