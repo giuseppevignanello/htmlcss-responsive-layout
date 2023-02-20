@@ -18,6 +18,13 @@ html:root {
 .debug .container {
     background-color: rgba(255, 192, 203, 0.547);
 }
+
+.debug [class^="col_"]:not(#app_header [class^="col_"]) {
+    border: 1px dashed black;
+    height: 100px;
+    margin: 0.5rem -0.5rem ;
+}
+
 .d-flex{
     display: flex;
 } 
@@ -65,21 +72,9 @@ html:root {
         height: 600px;
     }
 
-    .debug #demo [class^="col_"] {
-        border: 1px dashed black;
-        height: 100px;
-        margin: 0.5rem -0.5rem ;
-    }
-
 /* #endregion demo */
 
 /* #region planning  */
-
-.debug #planning [class^="col_"] {
-    border: 1px dashed black;
-    height: 100px;
-    margin: 0.5rem -0.5rem ;
-}
 
 #planning {
     padding: 1rem 0;
@@ -97,12 +92,13 @@ html:root {
 
 /*/#endregion partners */
 
-/* #region partners */
-.debug #benefits [class^="col_"] {
-    border: 1px dashed black;
-    height: 100px;
-    margin: 0.5rem -0.5rem ;
-}
+/* #region benefits */
+
+/* #endregion beneftis */
+
+/* #region about */
+/* #endregion about */
+
 
 /* #region media */
 
@@ -118,12 +114,18 @@ html:root {
     .col_md_4 {
         width: calc(100% /12 * 4);
         }
-
+    .col_md_5 {
+        width: calc(100%/ 12 * 5)
+    }
     .col_md_6 {
          width: calc(100% / 12 * 6);
     }
+
+    .col_md_7 {
+        width: calc(100% / 12 * 7)
+    }
     .col_md_8 {
-        width: calc(100%/ 12 * 8)
+        width: calc(100% / 12 * 8)
     }
 
     .col_md_9 {
@@ -150,6 +152,10 @@ html:root {
     }
     .col_lg_6 {
         width: 50%;
+    }
+
+    .col_lg_8 {
+        width: calc(100% /12 * 8)
     }
     
     .col_lg_10 {
