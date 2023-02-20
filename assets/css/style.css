@@ -130,7 +130,7 @@ html:root {
 
 /* #region media */
 
-@media screen and (min-width:420px) {
+@media screen and (min-width:768px) {
     .row {
         display: flex;
         justify-content: space-between;
@@ -167,7 +167,7 @@ html:root {
  }
  
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1200px) {
     .container {
         width: 70%;
     }
