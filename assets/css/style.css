@@ -212,7 +212,7 @@ li {
 #planning .row .card h2 {
     color: var(--light);
     padding-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #planning .row .card p {
@@ -548,16 +548,6 @@ li {
     #planning .row .card .planning_img {
         text-align: center;
 
-    }
-
-    #planning .row .card h2 {
-        padding-bottom: 1rem;
-        font-size: 4rem;
-    }
-
-    #planning .row .card p {
-        font-size: 12px;
-        line-height: 1rem;
     }
 
     /* #endregion planning 768px */
