@@ -59,10 +59,12 @@ li {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
 .py_3 {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
 .pb_2 {
     padding-bottom: 2rem;
 }
@@ -74,6 +76,7 @@ li {
 .pb_4 {
     padding-bottom: 4rem;
 }
+
 .pt_2 {
     padding-top: 2rem;
 }
@@ -149,30 +152,34 @@ li {
     margin: 0.5rem -0.5rem;
 }
 
-#demo .row .col_md_8 {
+#demo .row .large_card {
     align-items: center;
     padding: 2rem 2rem 0 2rem;
     flex-direction: column;
 }
 
-#demo .row .col_md_8 .col_content {
+#demo .row .large_card .col_content {
     flex-direction: column;
 }
 
-#demo .row h2,
+#demo .row h3,
 #demo .row i {
     color: var(--secondary);
+}
+
+#demo .row h3 {
+    font-size: 2rem;
 }
 
 #demo .row p {
     line-height: 1.5;
 }
 
-#demo .row .col_md_8 .col_content p {
+#demo .row .large_card .col_content p {
     color: var(--dark);
 }
 
-#demo .row .col_md_8 .col_content span {
+#demo .row .large_card .col_content span {
     color: var(--light);
     background-color: var(--secondary);
     padding: 0.5rem 2.5rem;
@@ -180,7 +187,7 @@ li {
     margin: 0 auto;
 }
 
-#demo .row .col_md_8 .col_content .col_image {
+#demo .row .large_card .col_content .col_image {
     width: 50%;
     margin: auto;
 }
@@ -311,6 +318,7 @@ li {
     font-size: 4rem;
     text-align: center;
 }
+
 #features .row .card {
     padding: 6rem 4rem;
     background-color: var(--light);
@@ -358,7 +366,7 @@ li {
     font-size: 5rem;
     color: var(--tertiary);
     padding-bottom: 1.5rem;
-   
+
 }
 
 #about .row .about_text p {
@@ -366,10 +374,12 @@ li {
     line-height: 2.5rem;
     padding: 1.5rem 0;
 }
+
 #about .row .about_person .about_image .photo {
-    margin: 3rem 0 ;
+    margin: 3rem 0;
     position: relative;
 }
+
 #about .row .about_person .about_image .photo img {
     border-radius: 50%;
 }
@@ -378,7 +388,7 @@ li {
     position: absolute;
     right: -1rem;
     top: -2rem;
-    color:var(--tertiary)
+    color: var(--tertiary)
 }
 
 /* /about image */
@@ -411,7 +421,6 @@ li {
     display: block;
     margin-bottom: 1.5rem;
     color: var(--light_text)
-
 }
 
 #call_to_action h3 {
@@ -444,6 +453,7 @@ li {
     text-decoration: underline;
     color: var(--light);
 }
+
 /* #endregion call_to_action */
 
 /* #region footer */
@@ -471,70 +481,72 @@ li {
 
 @media screen and (min-width:768px) {
 
-    /* #region 768px Utilities */
-    .row {
-        display: flex;
-        justify-content: space-between;
-    }
+/* #region 768px Utilities */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .col_md_3 {
-        width: calc(100% / 12 * 3);
-    }
+.col_md_3 {
+    width: calc(100% / 12 * 3);
+}
+.col_md_4 {
+     width: calc(100% /12 * 4);
+}
 
-    .col_md_4 {
-        width: calc(100% /12 * 4);
-    }
+.col_md_5 {
+    width: calc(100%/ 12 * 5)
+}
 
-    .col_md_5 {
-        width: calc(100%/ 12 * 5)
-    }
+.col_md_6 {
+    width: 50%
+}
 
-    .col_md_6 {
-        width: 50%
-    }
+.col_md_7 {
+    width: calc(100% / 12 * 7)
+}
 
-    .col_md_7 {
-        width: calc(100% / 12 * 7)
-    }
+.col_md_8 {
+    width: calc(100% / 12 * 8)
+}
 
-    .col_md_8 {
-        width: calc(100% / 12 * 8)
-    }
+.col_md_9 {
+    width: calc(100% /12 *9);
+}
 
-    .col_md_9 {
-        width: calc(100% /12 *9);
-    }
+/* #endregion 768px Utilities */
 
-    /* #endregion 768px Utilities */
+/* #region 768px header  */
+#app_header {
+    height: 4rem;
+}
 
-    /* #region 768px header  */
-    #app_header {
-        height: 4rem;
-    }
+/* #endregion 768px header  */
 
-    /* #endregion 768px header  */
+/* #region 768px demo */
+#demo .row .large_card {
+    align-items: flex-start;
+}
 
-    /* #region 768px demo */
-    #demo .row .col_md_8 {
-        align-items: flex-start;
-    }
+#demo .row p {
+    font-size: 14px;
+}
+#demo .row h3 {
+    font-size: 1.5rem
+}
 
-    #demo .row p {
-        font-size: 14px;
-    }
+#demo .row .large_card .col_content span {
+    margin: 0 50% 0 0;
+    text-align: center;
+}
 
-    #demo .row .col_md_8 .col_content span {
-        margin: 0 50% 0 0;
-        text-align: center;
-    }
+/* #endregion demo 768px */
+/* #region planning 768px */
 
-    /* #endregion demo 768px */
-    /* #region planning 768px */
+#planning .row .card .planning_img {
+    text-align: center;
 
-    #planning .row .card .planning_img {
-        text-align: center;
-
-    }
+}
 
     #planning .row .card h2 {
         padding-bottom: 1rem;
@@ -571,7 +583,7 @@ li {
         padding: 4rem 2rem;
         margin: 0rem -2rem 2rem -2rem
     }
-   
+
     #features .row .card p {
         line-height: 2rem;
         font-size: 1.3rem;
@@ -580,44 +592,48 @@ li {
     #features .row .card span {
         font-size: 1.3rem;
     }
+
     /* #endregion features 768px */
 
     /* #region about 768px  */
-#about .row {
-    margin: 0 2rem;
-}
+    #about .row {
+        margin: 0 2rem;
+    }
 
-#about .about_title {
-    font-size: 3rem;
-}
+    #about .about_title {
+        font-size: 3rem;
+    }
 
-#about .about_text, #about .about_person {
-    margin: 0 -2rem
-}
+    #about .about_text,
+    #about .about_person {
+        margin: 0 -2rem
+    }
 
-#about .row .about_text p {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: 1rem 0;
-}
-#about .row .about_person .about_image .photo {
-    margin: 2.5rem auto ;
-}
-/* /about image */
+    #about .row .about_text p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 1rem 0;
+    }
 
-#about .row .about_person .about_quote h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: var(--tertiary);
-    padding-bottom: 2rem;
-}
+    #about .row .about_person .about_image .photo {
+        margin: 2.5rem auto;
+    }
 
-#about .row .about_person .about_quote a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-}
+    /* /about image */
 
-/* /about quote */
+    #about .row .about_person .about_quote h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: var(--tertiary);
+        padding-bottom: 2rem;
+    }
+
+    #about .row .about_person .about_quote a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* /about quote */
 }
 
 
@@ -691,24 +707,25 @@ li {
 
     /*#region demo 1152px */
 
-    #demo .row .col_md_8 {
+    #demo .row .large_card {
         flex-direction: row;
         justify-content: space-between;
         margin-right: -3em;
     }
 
-    #demo .row .col_md_8 .col_content {
-        padding: 0 3rem 3rem 1rem;
+    #demo .row .large_card .col_content {
+        padding: 0;
 
     }
 
-    #demo .row .col_md_8 .col_content span {
+    #demo .row .large_card .col_content span {
         margin: 0;
         text-align: center;
     }
 
-    #demo .row .col_md_8 .col_image {
-        margin: 0
+    #demo .row .large_card .col_image {
+        margin: 0;
+        align-self: flex-end;
     }
 
     /* #endregion demo 1152px */
@@ -787,6 +804,7 @@ li {
     #features .row {
         margin: 0 -3rem
     }
+
     #features .row .card {
         padding: 4rem 2rem;
         background-color: var(--light);
@@ -825,17 +843,18 @@ li {
     }
 
     #about .row .about_person .about_image .photo {
-        margin: 3rem auto ;
+        margin: 3rem auto;
     }
+
     /* /about image */
-    
+
     #about .row .about_person .about_quote h3 {
         font-size: 1.8rem;
         line-height: 2.5rem;
         color: var(--tertiary);
         padding-bottom: 3rem;
     }
-    
+
     #about .row .about_person .about_quote a {
         font-size: 1rem;
         padding: 0.5rem 1rem;
