@@ -11,7 +11,8 @@ html:root {
     --tertiary: #9792e4;
     --light: #ffffff;
     --dark: #333333;
-    --free: #fdc15f
+    --free: #fdc15f;
+    --light_text: #aaaaaa;
 }
 
 body {
@@ -70,6 +71,9 @@ li {
     padding-bottom: 3rem;
 }
 
+.pb_4 {
+    padding-bottom: 4rem;
+}
 .pt_2 {
     padding-top: 2rem;
 }
@@ -303,12 +307,12 @@ li {
 
 #features .features_title {
     color: var(--light);
-    padding: 4rem 0;
-    font-size: 3rem;
+    padding: 10rem 0;
+    font-size: 4rem;
     text-align: center;
 }
 #features .row .card {
-    padding: 4rem 2rem;
+    padding: 6rem 4rem;
     background-color: var(--light);
     margin-bottom: 2rem;
     border-radius: 30px;
@@ -321,22 +325,22 @@ li {
 }
 
 #features .row .card h3 {
-    font-size: 2rem;;
+    font-size: 2rem;
     color: var(--tertiary);
 }
 
 #features .row .card p {
     line-height: 2.5rem;
-    color: var(--dark);
-    font-size: 1.5rem;
+    color: var(--light_text);
+    font-size: 1.8rem;
 }
 
 #features .row .card span {
     color: var(--light);
     background-color: var(--tertiary);
     font-size: 1.5rem;
-    padding: 1rem 5rem;
-    border-radius: 20px;
+    padding: 2rem 6rem;
+    border-radius: 50px;
     font-weight: bold;
     letter-spacing: 5px;
 }
@@ -406,7 +410,7 @@ li {
 #call_to_action span {
     display: block;
     margin-bottom: 1.5rem;
-    color: rgb(202, 195, 195);
+    color: var(--light_text)
 
 }
 
