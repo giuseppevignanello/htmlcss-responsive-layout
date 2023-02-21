@@ -1,7 +1,8 @@
 /*#region General */
 * {
     margin: 0;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html:root {
@@ -9,7 +10,7 @@ html:root {
     --secondary: #0084fd;
     --tertiary: #9792e4;
     --light: #ffffff;
-    --dark:#333333;
+    --dark: #333333;
 }
 
 body {
@@ -23,6 +24,7 @@ img {
 li {
     list-style: none;
 }
+
 /* #endregion general */
 
 /* region utilities */
@@ -37,9 +39,9 @@ li {
    
 } */
 
-.d-flex{
+.d-flex {
     display: flex;
-} 
+}
 
 .container {
     width: 90%;
@@ -55,9 +57,10 @@ li {
     margin-bottom: 2rem
 }
 
-.p_2{
+.p_2 {
     padding: 2rem;
 }
+
 .pb_2 {
     padding-bottom: 2rem;
 }
@@ -71,6 +74,7 @@ li {
     margin: 0.5rem;
     justify-content: center;
 }
+
 .col_3 {
     width: calc(100% / 12 *3);
 }
@@ -92,84 +96,86 @@ li {
     width: 100%;
 }
 
- /* #region header */
+/* #region header */
 
 
- #app_header {
+#app_header {
     background-color: var(--secondary);
     height: 8rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
- } 
+}
 
- #header_menu {
-  justify-content: end; 
- }
+#header_menu {
+    justify-content: end;
+}
 
- #header_menu ul {
+#header_menu ul {
     display: none;
- }
+}
 
- #app_header a {
+#app_header a {
     color: var(--light);
     text-decoration: none;
- }
+}
 
- #header_menu .fa-bars {
+#header_menu .fa-bars {
     color: var(--light);
- }
+}
 
 
 
- 
+
 /* #endregion header */
 
 /* #region demo */
-    .debug #demo .container {
-        height: 1000px;
-    }
+.debug #demo .container {
+    height: 1000px;
+}
 
-    #demo [class^="col_"] {
-        background-color: var(--primary);
-        border-radius: 20px;
-        margin: 0.5rem -0.5rem ;
-    }
+#demo [class^="col_"] {
+    background-color: var(--primary);
+    border-radius: 20px;
+    margin: 0.5rem -0.5rem;
+}
 
-    #demo .row .col_md_8 {
-        align-items: center;
-        padding: 2rem 2rem 0 2rem;
-        flex-direction: column;
-    }
+#demo .row .col_md_8 {
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    flex-direction: column;
+}
 
-    #demo .row .col_md_8 .col_content {
-        flex-direction: column;
-    }
-    #demo .row h2, #demo .row i
-      {
-        color: var(--secondary);
-    }
+#demo .row .col_md_8 .col_content {
+    flex-direction: column;
+}
 
-    #demo .row  p{
-       line-height: 1.5;
-    }
+#demo .row h2,
+#demo .row i {
+    color: var(--secondary);
+}
 
-    #demo .row .col_md_8 .col_content p {
-        color: var(--dark);
-    }
+#demo .row p {
+    line-height: 1.5;
+}
 
-    #demo .row .col_md_8 .col_content span {
-        color: var(--light);
-        background-color: var(--secondary);
-        padding: 0.5rem 2.5rem;
-        border-radius: 20px;
-        margin: 0 auto;
-    }
+#demo .row .col_md_8 .col_content p {
+    color: var(--dark);
+}
 
-    #demo .row .col_md_8 .col_content .col_image{
-       width: 50%;
-       margin: auto;
-    }
+#demo .row .col_md_8 .col_content span {
+    color: var(--light);
+    background-color: var(--secondary);
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#demo .row .col_md_8 .col_content .col_image {
+    width: 50%;
+    margin: auto;
+}
+
 /* #endregion demo */
 
 /* #region planning  */
@@ -208,7 +214,7 @@ li {
     border-radius: 20px;
 }
 
-#planning .row .bottom_card h2{
+#planning .row .bottom_card h2 {
     padding: 1rem 0;
 
 }
@@ -217,11 +223,12 @@ li {
     padding-bottom: 2rem;
 }
 
-#planning .row .bottom_card span{
+#planning .row .bottom_card span {
     background-color: var(--tertiary);
     padding: 1rem 1.25rem;
     border-radius: 50%;
 }
+
 /* #endregion planning */
 
 /* #region testimonial */
@@ -232,11 +239,16 @@ li {
     border: 1px dashed black;
 } */
 
+#testimonial {
+    background-color: var(--light);
+    padding-bottom: 10rem;
+}
+
 #testimonial #testimonial_text {
     text-align: center;
     padding: 3rem 2rem;
     font-size: 1.5rem;
-    
+
 }
 
 #testimonial #testimonial_text h2 {
@@ -249,7 +261,7 @@ li {
     line-height: 2.5rem;
 }
 
-#testimonial .row{
+#testimonial .row {
     background-color: var(--tertiary);
     padding: 2rem;
     color: var(--light);
@@ -263,7 +275,7 @@ li {
     margin: 2rem auto;
 }
 
-#testimonial .row img{
+#testimonial .row img {
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
@@ -280,10 +292,56 @@ li {
 }
 
 
-    
+
 /*/#endregion testimonial */
 
 /* #region features */
+#features {
+    background-color: var(--tertiary);
+}
+
+#features .features_title {
+    color: var(--light);
+    padding: 4rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+#features .row .card {
+    padding: 4rem 2rem;
+    background-color: var(--light);
+    margin-bottom: 2rem;
+    border-radius: 30px;
+
+}
+
+#features .row .card h2 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    color: var(--tertiary);
+}
+
+#features .row .card h3 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    color: var(--tertiary);
+}
+
+#features .row .card p {
+    line-height: 2.5rem;
+    color: var(--dark);
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+#features .row .card span {
+    color: var(--light);
+    background-color: var(--tertiary);
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
 
 /* #endregion features */
 
@@ -299,6 +357,7 @@ li {
     height: 80%;
     background-color: #b5ddff;
 }
+
 #call_to_action {
     background-color: var(--tertiary);
 }
@@ -313,7 +372,7 @@ li {
 .debug #app_footer .container {
     height: 80%;
     background-color: #b5ddff;
-}    
+}
 
 #app_footer {
     background-color: var(--dark);
@@ -323,28 +382,32 @@ li {
 
 @media screen and (min-width:768px) {
 
-/* #region 768px Utilities */
+    /* #region 768px Utilities */
     .row {
         display: flex;
         justify-content: space-between;
     }
+
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
 
     .col_md_4 {
         width: calc(100% /12 * 4);
-        }
+    }
+
     .col_md_5 {
         width: calc(100%/ 12 * 5)
     }
+
     .col_md_6 {
-         width: 50%
+        width: 50%
     }
 
     .col_md_7 {
         width: calc(100% / 12 * 7)
     }
+
     .col_md_8 {
         width: calc(100% / 12 * 8)
     }
@@ -352,65 +415,93 @@ li {
     .col_md_9 {
         width: calc(100% /12 *9);
     }
-/* #endregion 768px Utilities */
 
-/* #region 768px header  */
+    /* #endregion 768px Utilities */
+
+    /* #region 768px header  */
     #app_header {
         height: 4rem;
     }
-/* #endregion 768px header  */
 
-/* #region 768px demo */
-#demo .row .col_md_8 {
-    align-items: flex-start;
+    /* #endregion 768px header  */
+
+    /* #region 768px demo */
+    #demo .row .col_md_8 {
+        align-items: flex-start;
+    }
+
+    #demo .row p {
+        font-size: 14px;
+    }
+
+    #demo .row .col_md_8 .col_content span {
+        margin: 0 50% 0 0;
+        text-align: center;
+    }
+
+    /* #endregion demo 768px */
+    /* #region planning 768px */
+
+    #planning .row .card .planning_img {
+        text-align: center;
+
+    }
+
+    #planning .row .card h2 {
+        padding-bottom: 1rem;
+        font-size: 4rem;
+    }
+
+    #planning .row .card p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    /* #endregion planning 768px */
+    /* #region testimonial 768px */
+    #testimonial .row {
+        display: flex;
+        margin: 1rem -1rem;
+    }
+
+
+    #testimonial .row .testimonial_image {
+        margin: auto;
+        padding-right: 1rem;
+    }
+
+    #testimonial .row .quote {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    /* #endregion testimonial 768px */
+    /* #region features 768px */
+
+    #features .row .card {
+        padding: 4rem 2rem;
+        margin: 0rem -2rem 2rem -2rem
+    }
+   
+    #features .row .card p {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    #features .row .card span {
+        font-size: 1.3rem;
+    }
+
 }
-#demo .row  p{
-    font-size: 14px;
- }
 
- #demo .row .col_md_8 .col_content span {
-    margin: 0 50% 0 0 ;
-    text-align: center;
-}
-
-/* #endregion demo 768px */
-#planning .row .card .planning_img{
-    text-align: center;
-
-}
-#planning .row .card h2 {
-    padding-bottom: 1rem;
-    font-size: 4rem;
-}
-#planning .row .card p {
-    font-size: 12px;
-    line-height: 1rem;
-}
-
-
-#testimonial .row {
-    display: flex;
-    margin: 1rem -1rem;
-}
-
-
-#testimonial .row .testimonial_image {
-   margin: auto;
-   padding-right: 1rem;
-}
-
-#testimonial .row .quote {
-    font-size: 1.5rem;
-    text-align: start;
-}
-
- }
- 
 
 @media screen and (min-width:1152px) {
+
+    /* #region utilities 1152px */
     .container {
         width: 60%;
     }
+
     .col_lg_2 {
         width: calc(100% /12 * 2)
     }
@@ -440,7 +531,7 @@ li {
     .col_lg_9 {
         width: calc(100% /12 * 9)
     }
-    
+
     .col_lg_10 {
         width: calc(100% /12 * 10)
     }
@@ -448,6 +539,8 @@ li {
     .col_lg_12 {
         width: 100%
     }
+
+    /* #endregion utilities 1152px */
 
     /*#region header 1152px */
 
@@ -457,7 +550,7 @@ li {
 
     #header_menu ul {
         width: 100%;
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
@@ -466,23 +559,24 @@ li {
         background-color: var(--light);
         padding: 0.5rem 1rem;
         border-radius: 20px;
-     }
+    }
 
-     /*#endregion header 1152px */
-    
-     /*#region demo 1152px */
-    
-     #demo .row .col_md_8{
+    /*#endregion header 1152px */
+
+    /*#region demo 1152px */
+
+    #demo .row .col_md_8 {
         flex-direction: row;
         justify-content: space-between;
         margin-right: -3em;
     }
+
     #demo .row .col_md_8 .col_content {
         padding: 0 3rem 3rem 1rem;
-        
+
     }
 
-     #demo .row .col_md_8 .col_content span {
+    #demo .row .col_md_8 .col_content span {
         margin: 0;
         text-align: center;
     }
@@ -490,73 +584,120 @@ li {
     #demo .row .col_md_8 .col_image {
         margin: 0
     }
-    /* #endregion demo 1152px */
 
+    /* #endregion demo 1152px */
+    /* #region planning 1152px */
     #planning .row {
         margin: 0;
         justify-content: space-around;
-   
+
     }
 
     #planning .row .card {
         padding: 2rem 0;
     }
-    
+
     #planning .row .card .planning_img {
         padding-bottom: 5rem;
     }
+
     #planning .row .card h2 {
         padding-bottom: 2rem;
         font-size: 1.5rem;
     }
+
     #planning .row .card p {
         font-size: 12px;
         line-height: 1.5rem;
         padding-right: 1rem;
     }
-    
+
     #planning .row .bottom_card {
-        margin: 3rem 0; 
+        margin: 3rem 0;
         padding: 2rem;
         height: 50%;
         align-self: flex-end;
     }
+
     #planning .row .bottom_card .planning_img {
         margin: auto;
     }
 
 
-    #planning .row .bottom_card h2{
+    #planning .row .bottom_card h2 {
         padding: 1rem 0;
-    
+
     }
-    
+
     #planning .row .bottom_card p {
         padding-bottom: 2rem;
     }
-    
-    #planning .row .bottom_card span{
+
+    #planning .row .bottom_card span {
         background-color: var(--tertiary);
         padding: 1rem 1.25rem;
         border-radius: 50%;
     }
 
+    /* #endregion planning 1152px */
+    /* #region testimonial 1152px */
     #testimonial .row {
         display: flex;
         margin: 1rem -3rem;
     }
-    
-    
+
+
     #testimonial .row .testimonial_image {
-       padding-right: 3rem;
+        padding-right: 3rem;
     }
-    
+
     #testimonial .row .quote {
         font-size: 1.2rem;
         text-align: start;
     }
-    
-     }
 
-      /*#endregion demo 1152px */
+    /* #endregion testimonial 1152px */
 
+    #features .row {
+        margin: 0 -3rem
+    }
+    #features .row .card {
+        padding: 4rem 2rem;
+        background-color: var(--light);
+        margin-bottom: 4rem;
+        border-radius: 30px;
+
+    }
+
+    #features .row .card h2 {
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+        color: var(--tertiary);
+    }
+
+    #features .row .card h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+        color: var(--tertiary);
+    }
+
+    #features .row .card p {
+        line-height: 1.5rem;
+        color: var(--dark);
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #features .row .card span {
+        color: var(--light);
+        background-color: var(--tertiary);
+        font-size: 0.8rem;
+        padding: 0.5rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+}
+
+/*#endregion demo 1152px */
