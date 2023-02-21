@@ -30,15 +30,7 @@ li {
 
 /* region utilities */
 
-/* .debug .container {
-    background-color: rgba(255, 192, 203, 0.547);
-} */
 
-/* .debug [class^="col_"]:not(#app_header [class^="col_"]) {
-    border: 1px dashed black;
-    height: 100px;
-   
-} */
 
 .d-flex {
     display: flex;
@@ -49,7 +41,7 @@ li {
     margin: auto;
 }
 
-.text-center {
+.text_center {
     text-align: center;
 }
 
@@ -62,8 +54,20 @@ li {
     padding: 2rem;
 }
 
+.px_2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.py_3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 .pb_2 {
     padding-bottom: 2rem;
+}
+
+.pb_3 {
+    padding-bottom: 3rem;
 }
 
 .pt_2 {
@@ -191,8 +195,6 @@ li {
 }
 
 #planning .row .card .planning_img {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     margin: auto;
 }
 
@@ -247,14 +249,12 @@ li {
 
 #testimonial #testimonial_text {
     text-align: center;
-    padding: 3rem 2rem;
     font-size: 1.5rem;
 
 }
 
 #testimonial #testimonial_text h2 {
     color: var(--tertiary);
-    padding: 3rem 0;
     line-height: 3rem;
 }
 
@@ -317,13 +317,11 @@ li {
 
 #features .row .card h2 {
     font-size: 4rem;
-    padding-bottom: 3rem;
     color: var(--tertiary);
 }
 
 #features .row .card h3 {
-    font-size: 2rem;
-    padding-bottom: 3rem;
+    font-size: 2rem;;
     color: var(--tertiary);
 }
 
@@ -331,7 +329,6 @@ li {
     line-height: 2.5rem;
     color: var(--dark);
     font-size: 1.5rem;
-    padding-bottom: 3rem;
 }
 
 #features .row .card span {
@@ -386,7 +383,6 @@ li {
     font-size: 2.5rem;
     line-height: 3rem;
     color: var(--tertiary);
-    padding-bottom: 3rem;
 }
 
 #about .row .about_person .about_quote a {
@@ -405,8 +401,6 @@ li {
 
 #call_to_action {
     background-color: var(--tertiary);
-    padding: 3rem 0;
-    text-align: center;
 }
 
 #call_to_action span {
@@ -419,20 +413,17 @@ li {
 #call_to_action h3 {
     color: var(--light);
     font-size: 2rem;
-    padding-bottom: 3rem
 }
 
 #call_to_action h2 {
     font-size: 5rem;
     color: var(--free);
-    padding-bottom: 3rem;
 }
 
 #call_to_action p {
     color: var(--light);
     font-size: 1.5rem;
     line-height: 2rem;
-    padding-bottom: 3rem;
 }
 
 #call_to_action .btn {
@@ -455,8 +446,6 @@ li {
 
 #app_footer {
     background-color: var(--dark);
-    text-align: center;
-    padding: 3rem 0;
 }
 
 
