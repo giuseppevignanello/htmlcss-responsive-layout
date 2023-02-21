@@ -11,6 +11,7 @@ html:root {
     --tertiary: #9792e4;
     --light: #ffffff;
     --dark: #333333;
+    --free: #fdc15f
 }
 
 body {
@@ -44,7 +45,7 @@ li {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -401,19 +402,53 @@ li {
 /* #endregion about */
 
 /* #region call_to_action */
-.debug #call_to_action {
-    height: 300px;
-}
-
-.debug #call_to_action .container {
-    height: 80%;
-    background-color: #b5ddff;
-}
 
 #call_to_action {
     background-color: var(--tertiary);
+    padding: 3rem 0;
+    text-align: center;
 }
 
+#call_to_action span {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: rgb(202, 195, 195);
+
+}
+
+#call_to_action h3 {
+    color: var(--light);
+    font-size: 2rem;
+    padding-bottom: 3rem
+}
+
+#call_to_action h2 {
+    font-size: 5rem;
+    color: var(--free);
+    padding-bottom: 3rem;
+}
+
+#call_to_action p {
+    color: var(--light);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+
+#call_to_action .btn {
+    color: var(--tertiary);
+    background-color: var(--light);
+    padding: 1rem 2rem;
+    margin: 0 3rem 3rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#call_to_action p .privacy {
+    text-decoration: underline;
+    color: var(--light);
+}
 /* #endregion call_to_action */
 
 /* #region footer */
