@@ -199,6 +199,29 @@ li {
     color: var(--light);
     line-height: 1.5rem;
 }
+
+#planning .row .bottom_card {
+    text-align: center;
+    background-color: var(--light);
+    margin: 3rem 0;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+}
+
+#planning .row .bottom_card h2{
+    padding: 1rem 0;
+
+}
+
+#planning .row .bottom_card p {
+    padding-bottom: 2rem;
+}
+
+#planning .row .bottom_card span{
+    background-color: var(--tertiary);
+    padding: 1rem 1.25rem;
+    border-radius: 50%;
+}
 /* #endregion planning */
 
 /* #region testimonial */
@@ -320,7 +343,7 @@ li {
 
 @media screen and (min-width:1152px) {
     .container {
-        width: 70%;
+        width: 60%;
     }
     .col_lg_2 {
         width: calc(100% /12 * 2)
@@ -328,6 +351,10 @@ li {
 
     .col_lg_4 {
         width: calc(100% /12 * 4)
+    }
+
+    .col_lg_5 {
+        width: calc(100% /12 * 5)
     }
 
 
@@ -389,7 +416,18 @@ li {
     #demo .row .col_md_8 .col_image {
         margin: 0
     }
+    /* #endregion demo 1152px */
 
+    #planning .row {
+        margin: 0;
+        justify-content: space-around;
+   
+    }
+
+    #planning .row .card {
+        padding: 2rem 0;
+    }
+    
     #planning .row .card .planning_img {
         padding-bottom: 5rem;
     }
@@ -400,8 +438,34 @@ li {
     #planning .row .card p {
         font-size: 12px;
         line-height: 1.5rem;
+        padding-right: 1rem;
     }
     
+    #planning .row .bottom_card {
+        margin: 3rem 0; 
+        padding: 2rem;
+        height: 50%;
+        align-self: flex-end;
+    }
+    #planning .row .bottom_card .planning_img {
+        margin: auto;
+    }
+
+
+    #planning .row .bottom_card h2{
+        padding: 1rem 0;
+    
+    }
+    
+    #planning .row .bottom_card p {
+        padding-bottom: 2rem;
+    }
+    
+    #planning .row .bottom_card span{
+        background-color: var(--tertiary);
+        padding: 1rem 1.25rem;
+        border-radius: 50%;
+    }
 }
       /*#endregion demo 1152px */
 
