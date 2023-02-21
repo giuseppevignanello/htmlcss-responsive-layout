@@ -346,6 +346,58 @@ li {
 /* #endregion features */
 
 /* #region about */
+
+#about {
+    padding: 4rem 0;
+    background-color: var(--light);
+}
+
+#about .about_title {
+    font-size: 5rem;
+    color: var(--tertiary);
+    padding-bottom: 1.5rem;
+   
+}
+
+#about .row .about_text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 1.5rem 0;
+}
+#about .row .about_person .about_image .photo {
+    margin: 3rem 0 ;
+    position: relative;
+}
+#about .row .about_person .about_image .photo img {
+    border-radius: 50%;
+}
+
+#about .row .about_person .about_image .photo i {
+    position: absolute;
+    right: -1rem;
+    top: -2rem;
+    color:var(--tertiary)
+}
+
+/* /about image */
+
+#about .row .about_person .about_quote h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--tertiary);
+    padding-bottom: 3rem;
+}
+
+#about .row .about_person .about_quote a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.5rem;
+    background-color: var(--tertiary);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+/* /about quote */
 /* #endregion about */
 
 /* #region call_to_action */
@@ -491,7 +543,44 @@ li {
     #features .row .card span {
         font-size: 1.3rem;
     }
+    /* #endregion features 768px */
 
+    /* #region about 768px  */
+#about .row {
+    margin: 0 2rem;
+}
+
+#about .about_title {
+    font-size: 3rem;
+}
+
+#about .about_text, #about .about_person {
+    margin: 0 -2rem
+}
+
+#about .row .about_text p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1rem 0;
+}
+#about .row .about_person .about_image .photo {
+    margin: 2.5rem auto ;
+}
+/* /about image */
+
+#about .row .about_person .about_quote h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--tertiary);
+    padding-bottom: 2rem;
+}
+
+#about .row .about_person .about_quote a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* /about quote */
 }
 
 
@@ -698,6 +787,22 @@ li {
         letter-spacing: 5px;
     }
 
+    #about .row .about_person .about_image .photo {
+        margin: 3rem auto ;
+    }
+    /* /about image */
+    
+    #about .row .about_person .about_quote h3 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: var(--tertiary);
+        padding-bottom: 3rem;
+    }
+    
+    #about .row .about_person .about_quote a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
 }
 
 /*#endregion demo 1152px */
