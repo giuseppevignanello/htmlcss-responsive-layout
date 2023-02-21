@@ -46,10 +46,8 @@ li {
     margin: auto;
 }
 
-.row {
-    flex-wrap: wrap;
-    margin: 0.5rem;
-    justify-content: center;
+.text-center {
+    text-align: center;
 }
 
 .my_2 {
@@ -57,12 +55,21 @@ li {
     margin-bottom: 2rem
 }
 
+.p_2{
+    padding: 2rem;
+}
 .pb_2 {
     padding-bottom: 2rem;
 }
 
 .pt_2 {
     padding-top: 2rem;
+}
+
+.row {
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    justify-content: center;
 }
 .col_3 {
     width: calc(100% / 12 *3);
@@ -125,13 +132,17 @@ li {
     #demo .row .col_md_8 .col_content {
         flex-direction: column;
     }
-    #demo .row .col_md_8 .col_content h2 {
+    #demo .row h2, #demo .row i
+      {
         color: var(--secondary);
     }
 
-    #demo .row .col_md_8 .col_content p{
+    #demo .row  p{
        line-height: 1.5;
-       color: var(--dark);
+    }
+
+    #demo .row .col_md_8 .col_content p {
+        color: var(--dark);
     }
 
     #demo .row .col_md_8 .col_content span {
@@ -222,7 +233,7 @@ li {
         width: calc(100%/ 12 * 5)
     }
     .col_md_6 {
-         width: calc(100% / 12 * 6);
+         width: 50%
     }
 
     .col_md_7 {
@@ -247,7 +258,7 @@ li {
 #demo .row .col_md_8 {
     align-items: flex-start;
 }
-#demo .row .col_md_8 .col_content p{
+#demo .row  p{
     font-size: 14px;
  }
 
@@ -271,9 +282,12 @@ li {
     .col_lg_4 {
         width: calc(100% /12 * 4)
     }
+
+
     .col_lg_6 {
         width: 50%;
     }
+
 
     .col_lg_8 {
         width: calc(100% /12 * 8)
@@ -284,9 +298,10 @@ li {
     }
 
     .col_lg_12 {
-        width: calc(100% /12 * 12)
+        width: 100%
     }
 
+    /*#region header 1152px */
     #header_menu div {
         display: none;
     }
@@ -304,18 +319,25 @@ li {
         border-radius: 20px;
      }
 
+     /*#endregion header 1152px */
+
      #demo .row .col_md_8{
         flex-direction: row;
-        gap: 1rem;
+        justify-content: space-between;
+        margin-right: -3em;
     }
     #demo .row .col_md_8 .col_content {
-        padding-bottom: 1rem;
+        padding: 0 3rem 3rem 1rem;
+        
     }
 
-
      #demo .row .col_md_8 .col_content span {
-        margin: 0 30% 0 0;
+        margin: 0;
         text-align: center;
+    }
+
+    #demo .row .col_md_8 .col_image {
+        margin: 0
     }
 
 }
