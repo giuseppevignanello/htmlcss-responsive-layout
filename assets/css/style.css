@@ -452,17 +452,26 @@ li {
 /* #endregion call_to_action */
 
 /* #region footer */
-.debug #app_footer {
-    height: 300px;
-}
-
-.debug #app_footer .container {
-    height: 80%;
-    background-color: #b5ddff;
-}
 
 #app_footer {
     background-color: var(--dark);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+#app_footer p {
+    color: var(--light);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#app_footer #top_footer {
+    padding-bottom: 5rem;
+}
+
+#app_footer a {
+    color: var(--tertiary);
 }
 
 /* #region media */
