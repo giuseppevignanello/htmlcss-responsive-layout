@@ -481,72 +481,74 @@ li {
 
 @media screen and (min-width:768px) {
 
-/* #region 768px Utilities */
-.row {
-    display: flex;
-    justify-content: space-between;
-}
+    /* #region 768px Utilities */
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.col_md_3 {
-    width: calc(100% / 12 * 3);
-}
-.col_md_4 {
-     width: calc(100% /12 * 4);
-}
+    .col_md_3 {
+        width: calc(100% / 12 * 3);
+    }
 
-.col_md_5 {
-    width: calc(100%/ 12 * 5)
-}
+    .col_md_4 {
+        width: calc(100% /12 * 4);
+    }
 
-.col_md_6 {
-    width: 50%
-}
+    .col_md_5 {
+        width: calc(100%/ 12 * 5)
+    }
 
-.col_md_7 {
-    width: calc(100% / 12 * 7)
-}
+    .col_md_6 {
+        width: 50%
+    }
 
-.col_md_8 {
-    width: calc(100% / 12 * 8)
-}
+    .col_md_7 {
+        width: calc(100% / 12 * 7)
+    }
 
-.col_md_9 {
-    width: calc(100% /12 *9);
-}
+    .col_md_8 {
+        width: calc(100% / 12 * 8)
+    }
 
-/* #endregion 768px Utilities */
+    .col_md_9 {
+        width: calc(100% /12 *9);
+    }
 
-/* #region 768px header  */
-#app_header {
-    height: 4rem;
-}
+    /* #endregion 768px Utilities */
 
-/* #endregion 768px header  */
+    /* #region 768px header  */
+    #app_header {
+        height: 4rem;
+    }
 
-/* #region 768px demo */
-#demo .row .large_card {
-    align-items: flex-start;
-}
+    /* #endregion 768px header  */
 
-#demo .row p {
-    font-size: 14px;
-}
-#demo .row h3 {
-    font-size: 1.5rem
-}
+    /* #region 768px demo */
+    #demo .row .large_card {
+        align-items: flex-start;
+    }
 
-#demo .row .large_card .col_content span {
-    margin: 0 50% 0 0;
-    text-align: center;
-}
+    #demo .row p {
+        font-size: 14px;
+    }
 
-/* #endregion demo 768px */
-/* #region planning 768px */
+    #demo .row h3 {
+        font-size: 1.5rem
+    }
 
-#planning .row .card .planning_img {
-    text-align: center;
+    #demo .row .large_card .col_content span {
+        margin: 0 50% 0 0;
+        text-align: center;
+    }
 
-}
+    /* #endregion demo 768px */
+    /* #region planning 768px */
+
+    #planning .row .card .planning_img {
+        text-align: center;
+
+    }
 
     #planning .row .card h2 {
         padding-bottom: 1rem;
