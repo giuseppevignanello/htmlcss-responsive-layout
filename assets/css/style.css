@@ -227,11 +227,56 @@ li {
 /* #region testimonial */
 
 
-.debug #testiomonial .image, .debug #testiomonial .quote {
+/* .debug #testiomonial .image, .debug #testiomonial .quote {
     height: 50px;
     border: 1px dashed black;
+} */
+
+#testimonial #testimonial_text {
+    text-align: center;
+    padding: 3rem 2rem;
+    font-size: 1.5rem;
+    
 }
 
+#testimonial #testimonial_text h2 {
+    color: var(--tertiary);
+    padding: 3rem 0;
+    line-height: 3rem;
+}
+
+#testimonial #testimonial_text p {
+    line-height: 2.5rem;
+}
+
+#testimonial .row{
+    background-color: var(--tertiary);
+    padding: 2rem;
+    color: var(--light);
+    line-height: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 100px;
+}
+
+#testimonial .row img{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+#testimonial .row .quote {
+    padding: 2rem 0
+}
+
+#testimonial .row span {
+    font-weight: bold;
+    display: block;
+    padding-top: 2rem;
+}
+
+
+    
 /*/#endregion testimonial */
 
 /* #region features */
@@ -338,6 +383,10 @@ li {
     line-height: 1rem;
 }
 
+
+#testimonial .row {
+    display: flex;
+}
  }
  
 
