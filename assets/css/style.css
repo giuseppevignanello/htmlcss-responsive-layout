@@ -119,6 +119,10 @@ li {
     padding: 0 1rem;
 }
 
+#app_header .container {
+    justify-content: space-between;
+}
+
 #header_menu {
     justify-content: end;
 }
